@@ -7,7 +7,9 @@ Create a console application which takes an user input and returns a list of ana
 An anagram is a word that you can rearrange the letters and it becomes a new word. For example, "bread" is an anagram of "beard".
 
 ## Application should have:
-- 
+- Interact with user and return an anagram
+- Separated frontend and backend logic
+- Unit testing for backend logic
 
 ## Unit Test
 | Spec | User input | Expected output |

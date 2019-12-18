@@ -1,16 +1,30 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using Anagram.Models;
+using AnagramChecker.Models;
+using System.Collections.Generic;
 
-namespace Anagram.Tests
+namespace AnagramChecker.Tests
 {
     [TestClass]
     public class AnagramTest
     {
         [TestMethod]
-        public void MethodName_DescriptionOfBehavior_ExpectedResult()
+        public void Checker_DeterminesAnagram_True()
         {
-            //Test Code
+            Assert.AreEqual(true, Anagram.Checker("bread", "beard"));
         }
- 
+
+        // [TestMethod]
+        // public void GetAnagrams_UserInputMatchesTheList_Bread()
+        // {
+        //     // Arrange
+        //     List<string> expected = new List<string>() {"bread", "orange", "tomato", "bared", "banana"};
+        //     string wordToCompare = "beard";
+
+        //     // Act
+        //     List<string> result = Anagram.GetAnagrams(wordToCompare, expected);
+
+        //     // Assert
+        //     Assert.AreEqual("bared", result[1]);
+        // }
     }
 }

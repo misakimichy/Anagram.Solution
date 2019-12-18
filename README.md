@@ -9,16 +9,18 @@ An anagram is a word that you can rearrange the letters and it becomes a new wor
 ## Application should have:
 - 
 
-## Spec
-| User input | Expected output |
-| :------------- | :------------- |
-| Add user input | Add expected UI output |
+## Unit Test
+| Spec | User input | Expected output |
+|  :------------- | :------------- | :------------- |
+| Compares 2 single words and determines if they are anagrams. | beard, bread | true |
+| Compares 2 single words and determines if they are anagrams. | car, bread| false |
+| Compares more than 2 single words and determines if they are anagrams. | beard, bread, car| Only beard is an anagram of bread. |
 
 
 ## Installation:
 1. Clone this repo:
 ```
-$ git clone url-of-this-repo
+$ git clone https://github.com/misakimichy/Anagram.Solution.git
 ```
 
 2. Use the following codes:
@@ -46,4 +48,4 @@ _Git, GitHub, C# and .NET Core
 
 
 ## License
-Copyright © 2019 under the MIT License
+Copyright © 2019 __Misaki Koonce__ under the MIT License

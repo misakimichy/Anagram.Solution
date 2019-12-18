@@ -11,9 +11,11 @@ namespace AnagramChecker.Models
             for (int i = 0; i < inputList.Length; i ++)
             {
                 bool isAnagram = Checker(inputWord, inputList[i]);
-                if (isAnagram) anagrams.Add(inputList[i]);
+                if (isAnagram)
+                {
+                    anagrams.Add(inputList[i]);
+                }
             }
-
             return anagrams;
         }
 
@@ -25,17 +27,11 @@ namespace AnagramChecker.Models
             Array.Sort (char1);
             Array.Sort (char2);
             
-            string NewWord1 = string.Join("", char1);
-            string NewWord2 = string.Join("", char2);
+            string newWord1 = string.Join("", char1);
+            string newWord2 = string.Join("", char2);
 
-            if (NewWord1 == NewWord2)
-            {
-                return true;
-            }
-            else
-            {
-                return false;
-            }
+            bool result = (newWord1 == newWord2) ? true : false;
+            return result;
         }
     }
 }

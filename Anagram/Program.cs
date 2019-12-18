@@ -17,7 +17,6 @@ namespace AnagramChecker.Models
             string[] inputList = stringListWords.Split(',');
 
             List<string> result = Anagram.GetAnagrams(userInput, inputList);
-
             Console.WriteLine($"Your input word is '{userInput}'.");
             Console.WriteLine($"The following words from your list are anagrams of {userInput}: ");
             foreach(string word in result)
